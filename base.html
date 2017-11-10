@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     {% block style %}
-        {% for i in css %}
-            <link rel="stylesheet" href="/_static/{{ i }}"/>
+        {% for c in css %}
+            <link rel="stylesheet" href="/_static/{{ c }}"/>
         {% endfor %}
     {% endblock %}
 
@@ -13,8 +13,8 @@
 <body>
 {% block content %}{% endblock %}
 {% block scripts %}
-    {% for j in js %}
-         <script src="/_static/{{ j }}"></script>
+    {% for javascript in js %}
+         <script src="/_static/{{ javascript }}"></script>
     {% endfor %}
 {% endblock %}
 </body>
