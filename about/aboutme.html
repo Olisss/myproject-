@@ -1,10 +1,7 @@
-<head>   
-<meta charset='utf-8'>
-<title>About</title>
-</head>
-<body>
+{% extends '../base.html' %}
 
-<a href="../index.html">Относительная ссылка</a>
-<a href="/home/giraffe/myproject-/index.html">Абсолютная ссылка</a>
+{% block title %}About Page{% endblock %}
 
-</body>
+{% block content %}
+<h1>About Page</h1>
+{% endblock %}
