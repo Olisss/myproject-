@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
     {% block style %}
-        {% for c in css %}
-            <link rel="stylesheet" href="/_static/{{ c }}"/>
+        {% for s in css %}
+            <link rel="stylesheet" href="/_static/{{ s }}"/>
         {% endfor %}
     {% endblock %}
 
